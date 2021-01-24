@@ -33,7 +33,7 @@ class smsReceiver : BroadcastReceiver(){
                     sendTextMessage(celularOrigen,null,"" +
                             "Envie:" +
                             " PRODUCTO un espacio, el número de sucursal, espacio y el id del producto.\n " +
-                            "Ejemplo: PRODUCTO 1 111",null,null) }
+                            "Ejemplo: PRODUCTO 1 11",null,null) }
                 else if(!mensaje[0].equals("PRODUCTO")){ SmsManager.getDefault().sendTextMessage(celularOrigen,null,
                         "Mensaje escrito de manera incorrecta.\n Seguir la siguiente sintaxis:PRODUCTO 1 111",
                     null,null) }
